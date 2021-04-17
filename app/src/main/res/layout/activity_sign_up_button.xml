@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    tools:context=".SignUpButton">
+
+    <LinearLayout
+        android:padding="15dp"
+        android:background="@drawable/shape"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:textColorHint="#B1B0B0"
+            android:textColor="@android:color/black"
+            android:hint="User name"
+            android:background="@drawable/shape"
+            android:id="@+id/user_name_signUp"
+            android:padding="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <EditText
+            android:inputType="textPassword"
+            android:textColorHint="#A6A3A3"
+            android:textColor="@android:color/black"
+            android:hint="Password"
+            android:padding="10dp"
+            android:background="@drawable/shape"
+            android:id="@+id/user_password_signUp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/sign_up_button"
+            android:text="Sign Up"
+            android:textAllCaps="false"
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/sign_in_id"
+        android:text="Sign In"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ProgressBar
+        android:visibility="gone"
+        android:id="@+id/progress_bar_id"
+        android:layout_width="20dp"
+        android:layout_height="20dp"/>
+
+
+</LinearLayout>
