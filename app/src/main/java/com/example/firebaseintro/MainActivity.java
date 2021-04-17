@@ -27,7 +27,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         mAuth = FirebaseAuth.getInstance();
+
         user_name = (EditText)findViewById(R.id.user_name_id);
         user_pass = (EditText)findViewById(R.id.user_pass);
         login_button = (Button)findViewById(R.id.login_id);
